@@ -1,0 +1,168 @@
+/* General Styles for the Login Page */
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Universal reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+html {
+  font-size: 63.5%; /* Responsive scaling */
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url('../images/stack.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; /* Ensure background image is positioned correctly */
+  min-height: 100vh; /* Ensure the body covers the full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Playfair Display", serif;
+}
+
+/* Header Styling */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2.5rem 10%; /* Larger padding for header */
+  background: #081b29;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 3rem; /* Increased size for logo */
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Edu AU VIC WA NT Arrows", cursive;
+}
+
+.navbar a {
+  font-size: 2rem; /* Increased font size for navigation */
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 3rem; /* Slightly larger spacing */
+  transition: 0.3s;
+}
+
+.navbar a.active {
+  color: white;
+}
+
+.navbar a:hover {
+  color: #00abf0;
+}
+
+/* Container for forms and content */
+.container {
+  width: 400px; /* Reduced width for smaller container */
+  height: 400px; /* Reduced height */
+  background-color: rgba(67, 65, 65, 0.6); /* Slightly darker background */
+  padding: 25px; /* Slightly reduced padding */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  text-align: center; /* Center text inside container */
+}
+
+h1 {
+  font-size: 2.4rem; /* Slightly smaller font size */
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Form Styling */
+form {
+  width: 100%;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  width: 100%; /* Ensure form group fills the width */
+}
+
+label {
+  font-size: 1.4rem;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.4rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  margin-top: 5px;
+}
+
+input:focus,
+select:focus {
+  border-color: #00abf0;
+}
+
+/* Center Button */
+button.submit-btn {
+  background-color: #00abf0;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 80%; /* Make the button smaller than the form */
+  align-self: center; /* Align button in the center */
+}
+
+button.submit-btn:hover {
+  background-color: #008cb2;
+}
+.login{
+font-size:20px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #081b29; /* Dark background color */
+  color: #fff; /* White text */
+  font-size: medium;
+  text-align: center; /* Center-align text */
+  padding: 2rem 0;
+  width: 100%; /* Ensure it takes full width */
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+footer p {
+  margin: 0;
+}

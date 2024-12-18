@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+html {
+  font-size: 62.5%; /* 1rem = 10px for easier scaling */
+  overflow-x: hidden;
+}
+
+/* Set a background image for the body */
+body {
+  min-height: 100vh; /* Make sure the body covers the full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('../images/stack.jpg'); /* Add your image path here */
+  background-size: cover; /* Ensure the image covers the entire viewport */
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-attachment: fixed; /* Optional: keeps the background fixed during scroll */
+  font-family: "Playfair Display", serif;
+}
+/* Header Styling */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2.5rem 10%; /* Larger padding for header */
+  background: #081b29;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 3rem; /* Increased size for logo */
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Edu AU VIC WA NT Arrows", cursive;
+}
+
+.navbar a {
+  font-size: 2rem; /* Increased font size for navigation */
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 3rem; /* Slightly larger spacing */
+  transition: 0.3s;
+}
+
+.navbar a.active {
+  color: white;
+}
+
+.navbar a:hover {
+  color: #00abf0;
+}
+.table-container {
+  width: 90%;
+  
+  max-width: 800px;
+  margin-top: 15%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #081b29;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+  background-color: #e8f5e9;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #ff1a1a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d11a1a;
+}
+footer {
+  background-color: #081b29; /* Dark background color */
+  color: #fff; /* White text */
+  font-size:medium;
+  text-align: center; /* Center-align text */
+  padding: 2rem 0;
+  width: 100%; /* Ensure it takes full width */
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+footer p {
+  margin: 0;
+}

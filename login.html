@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Net Nexus Bank</title>
+  <link rel="stylesheet" href="./style/create.css">
+  <script src="/js/create.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><i class="bi bi-bank"></i> Net Nexus Bank</a>
+        <nav class="navbar">
+          <a href="index.html" class="active"><i class="bi bi-house-door"></i> Home</a>
+          <a href="create.html" class="active"><i class="bi bi-plus-circle"></i> Create</a>
+          <a href="deposit.html" class="active"><i class="bi bi-piggy-bank"></i> Deposit</a>
+          <a href="withdraw.html" class="active"><i class="bi bi-cash-coin"></i> Withdraw</a>
+          <a href="Alldata.html" class="active"><i class="bi bi-clipboard-data"></i> AllData</a>
+        </nav>
+      </header>
+
+    <div class="container">
+      <header>
+        <h1>Login to Your Account</h1>
+      </header>
+      <main>
+        <form class="login-form">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          </div>
+          <button type="submit" class="submit-btn">Login</button>
+          <p class="login">Don't have an account? <a href="./create.html">Create one</a></p>
+        </form>
+      </main>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer>
+      <p>© 2024 Net Nexus Bank. All rights reserved.</p>
+    </footer>
+</body>
+</html>

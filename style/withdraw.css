@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Universal reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+html {
+  font-size: 62.5%; /* Makes 1rem = 10px for easier calculations */
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url('../images/stack.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; /* Ensure background image is positioned correctly */
+  min-height: 100vh; /* Ensure the body covers the full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Playfair Display", serif;
+  margin: 0; /* Remove any default margin */
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2.5rem 10%; /* Larger padding for header */
+  background: #081b29;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 3rem; /* Increased size for logo */
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Edu AU VIC WA NT Arrows", cursive;
+}
+
+.navbar a {
+  font-size: 2rem; /* Increased font size for navigation */
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 3rem; /* Slightly larger spacing */
+  transition: 0.3s;
+}
+
+.navbar a.active {
+  color: white;
+}
+
+.navbar a:hover {
+  color: #00abf0;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+  
+  /* Ensures that the form is centered */
+  margin: 0; /* Ensure no margins that could misalign */
+}
+h1{
+  color:#FFF
+
+}
+h2 {
+  margin-bottom: 20px;
+  color: #000;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #555;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #081b29;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #081b29;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #081b29; /* Dark background color */
+  color: #fff; /* White text */
+  font-size: medium;
+  text-align: center; /* Center-align text */
+  padding: 2rem 0;
+  width: 100%; /* Ensure it takes full width */
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+footer p {
+  margin: 0;
+}
